@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 
 import question3of3 from "../assets/question3of3.png";
 import batman from "../assets/batman.png";
@@ -10,9 +11,15 @@ function Page3() {
     <div>
       <img src={question3of3} alt="question3of3" />
       <h2> Choose one of the three movies </h2>
-      <img src={batman} alt="batman" />
-      <img src={spiderman} alt="spiderman" />
-      <img src={flash} alt="flash" />
+      <Link to="/WatchNow">
+        <img src={batman} alt="batman" />
+      </Link>
+      <Link to="/WatchNow">
+        <img src={spiderman} alt="spiderman" />
+      </Link>
+      <Link to="/WatchNow">
+        <img src={flash} alt="flash" />
+      </Link>
     </div>
   );
 }
