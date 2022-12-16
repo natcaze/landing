@@ -2,17 +2,19 @@ import "./App.css";
 import React from "react";
 
 import Footer from "./components/Footer";
-import Logo from "./components/Logo";
 
+import logo from "../src/assets/logo.png";
+import question1of3 from "../src/assets/question1of3.png";
 import grayMan from "../src/assets/grayMan.png";
 import blonde from "../src/assets/blonde.png";
 import minions from "../src/assets/minions.png";
-import question1of3 from "../src/assets/question1of3.png";
 
 function App() {
   return (
     <div className="App">
-      <Logo />
+      <div>
+        <img src={logo} alt="logo" />
+      </div>
       <img src={question1of3} alt="question1of3" />
       <h2> Choose one of the three movies </h2>
       <img src={grayMan} alt="grayMan" />
