@@ -1,13 +1,14 @@
 import "./App.css";
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Footer from "./components/Footer";
-
 import logo from "../src/assets/logo.png";
-import question1of3 from "../src/assets/question1of3.png";
-import grayMan from "../src/assets/grayMan.png";
-import blonde from "../src/assets/blonde.png";
-import minions from "../src/assets/minions.png";
+
+import Page1 from "./pages/Page1";  
+import Page2 from "./pages/Page2";  
+import Page3 from "./pages/Page3";  
+
 
 function App() {
   return (
@@ -15,11 +16,13 @@ function App() {
       <div>
         <img src={logo} alt="logo" />
       </div>
-      <img src={question1of3} alt="question1of3" />
-      <h2> Choose one of the three movies </h2>
-      <img src={grayMan} alt="grayMan" />
-      <img src={blonde} alt="blonde" />
-      <img src={minions} alt="minions" />
+
+      <Routes>
+        <Route path="/page1" element={<Page1 />} />
+        <Route path="/page2" element={<Page2 />} />
+        <Route path="/page3" element={<Page3 />} />
+      </Routes>
+
       <Footer />
     </div>
   );
