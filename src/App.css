@@ -120,7 +120,11 @@ button {
   padding-right: 150px;
   text-align: center;
   margin-top: 10px;
+}
+
+button:hover {
   cursor: grab;
+  background-color: #ed3c33;
 }
 
 h4 {
