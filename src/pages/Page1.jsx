@@ -16,21 +16,19 @@ function Page1() {
       <h2> Choose one of the three movies </h2>
 
       <div className="movies">
-      
-          <Link to="/page2">
-            <img src={grayMan} alt="grayMan" />
-          </Link>
-       
-          <Link to="/page2">
-            <img src={blonde} alt="blonde" />
-          </Link>
+        <Link to="/page2" className="effect">
+          <img src={grayMan} alt="grayMan" />
+        </Link>
 
-          <Link to="/page2">
-            <img src={minions} alt="minions" />
-          </Link>
-          
-        </div>
+        <Link to="/page2" className="effect">
+          <img src={blonde} alt="blonde" />
+        </Link>
+
+        <Link to="/page2" className="effect">
+          <img src={minions} alt="minions" />
+        </Link>
       </div>
+    </div>
   );
 }
 

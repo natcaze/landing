@@ -16,17 +16,15 @@ function Page2() {
       <h2> Choose one of the three movies </h2>
 
       <div className="movies">
-
-        <Link to="/page3">
+        <Link to="/page3" className="effect">
           <img src={maverick} alt="maverick" />
         </Link>
-        <Link to="/page3">
+        <Link to="/page3" className="effect">
           <img src={bulletTrain} alt="bulletTrain" />
         </Link>
-        <Link to="/page3">
+        <Link to="/page3" className="effect">
           <img src={thor} alt="thor" />
         </Link>
-
       </div>
     </div>
   );

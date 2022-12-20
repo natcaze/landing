@@ -60,17 +60,17 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
+  cursor: grab;
 }
 
 img {
   border-radius: 8px;
   background-color: black;
-  cursor: grab;
 }
 
-img:hover{
-transition: 0.25s ease-in-out;
-opacity: 0.7;
+.effect:hover {
+  transition: 0.25s ease-in-out;
+  opacity: 0.7;
 }
 
 h2 {
@@ -90,6 +90,7 @@ h2 {
   color: rgb(175, 175, 175);
 }
 
+/* WATCH NOW PAGE */
 .watch {
   border-radius: 10px;
   border: solid 8px #22daa8;
@@ -108,7 +109,6 @@ h2 {
   padding-bottom: 30px;
 }
 
-/* WATCH NOW PAGE */
 button {
   background-color: #ec5632;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -147,5 +147,3 @@ h4 {
   color: #010205;
   margin: 10px;
 }
-
-
