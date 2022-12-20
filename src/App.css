@@ -65,7 +65,12 @@ body {
 img {
   border-radius: 8px;
   background-color: black;
-  cursor: default;
+  cursor: grab;
+}
+
+img:hover{
+transition: 0.25s ease-in-out;
+opacity: 0.7;
 }
 
 h2 {
@@ -142,3 +147,5 @@ h4 {
   color: #010205;
   margin: 10px;
 }
+
+
