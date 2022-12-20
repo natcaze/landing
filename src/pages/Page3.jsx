@@ -9,17 +9,24 @@ import flash from "../assets/flash.png";
 function Page3() {
   return (
     <div>
-      <img src={question3of3} alt="question3of3" />
+      <div className="question">
+        <img src={question3of3} alt="question3of3" />
+      </div>
+
       <h2> Choose one of the three movies </h2>
-      <Link to="/WatchNow">
-        <img src={batman} alt="batman" />
-      </Link>
-      <Link to="/WatchNow">
-        <img src={spiderman} alt="spiderman" />
-      </Link>
-      <Link to="/WatchNow">
-        <img src={flash} alt="flash" />
-      </Link>
+
+      <div className="movies">
+        <Link to="/WatchNow">
+          <img src={batman} alt="batman" />
+        </Link>
+        <Link to="/WatchNow">
+          <img src={spiderman} alt="spiderman" />
+        </Link>
+        <Link to="/WatchNow">
+          <img src={flash} alt="flash" />
+        </Link>
+        
+      </div>
     </div>
   );
 }

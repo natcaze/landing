@@ -4,7 +4,7 @@ import watchMovies from "../assets/watchMovies.png";
 
 function WatchNow() {
   return (
-    <div>
+    <div className="watch">
       <img src={watchMovies} alt="watchMovies" />
     </div>
   );
